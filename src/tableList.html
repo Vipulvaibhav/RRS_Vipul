@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Welcome to Royal Restaurant</title>
+    <link rel="stylesheet" media="all" href="style.css">
+    <script>
+        function show(x)
+        {
+            var elements = document.getElementsByClassName("infotab");
+            for (var i = 0, len = elements.length; i < len; i++) {
+                // elements[i].style ...
+                if(i==(x-1))
+                {
+                    elements[i].style.display="inline";
+                }
+                else {
+                    elements[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+</head>
+<>
+<header>
+    <p align="center">The Royal Restaurant</p>
+</header>
+<content>
+    <div clas="row">
+        <div class ="col-xs-12 col-md-2">
+
+        </div>
+        <div class ="col-xs-12 col-md-8 container">
+
+            </br>
+            <p align="center">
+                List of Reservations for the selected date:
+                <br>
+            <ul>
+                <li onclick="show(1)">Table #1 <i class="fa fa-plus-square" ></i>
+                </li>
+                <li onclick="show(2)">Table #2<i class="fa fa-plus-square" style="float: left"></i>
+                </li>
+                <li onclick="show(3)">Table #3<i class="fa fa-plus-square" style="float: left"></i>
+                </li>
+                <li onclick="show(4)">Table #4<i class="fa fa-plus-square" style="float: left"></i>
+                </li>
+                <li onclick="show(5)">Table #5<i class="fa fa-plus-square" style="float: left"></i>
+                </li>
+                <li onclick="show(6)">Table #6<i class="fa fa-plus-square" style="float: left"></i>
+                </li>
+                <li onclick="show(7)">Table #7<i class="fa fa-plus-square" style="float: left"></i>
+                </li>
+                <li onclick="show(8)">Table #8<i class="fa fa-plus-square" style="float: left"></i>
+                </li>
+            </ul>
+            </p>
+            <br>
+            <input type="button" id="back" name="back" class="login-btn" value="Back to Menu">
+        </div>
+        <div class ="col-xs-12 col-md-2">
+
+        </div>
+    </div>
+</content>
+</body>
+</html>

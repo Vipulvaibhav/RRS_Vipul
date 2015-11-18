@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <title>Owner Session</title>
+    <link rel="stylesheet" media="all" href="style.css">
+    <script>
+        function info()
+        {
+            document.getElementById("visible_div").style.display="none";
+            document.getElementById("hidden_div").style.display="inline";
+
+        }
+        function resume()
+        {
+            document.getElementById("visible_div").style.display="inline";
+            document.getElementById("hidden_div").style.display="none";
+
+        }
+    </script>
+
+</head>
+<body>
+<header>
+    <p align="center">The Royal Restaurant</p>
+</header>
+<content>
+    <div clas="row">
+        <div class ="col-xs-12 col-md-4">
+
+        </div>
+        <div class ="col-xs-12 col-md-4 container" id="visible_div">
+            <div id="tile1">
+
+            </div>
+            <div id="tile2">
+
+            </div>
+            </br>
+            <p align="center">
+                Welcome Owner!
+                <br>
+                Please Select an option below
+                <br>
+                <input type="button" id="view_res" name="view_res" class="login-btn" value="View Reservations List" onclick='info()'>
+                <br>
+                <input type="button" id="view_sit" name="view_sit" class="login-btn" value="View Seating Area">
+                <br>
+                <input type="button" id="view_prof" name="view_prof" class="login-btn" value="Profile/Settings">
+                <br>
+                <input type="button" id="contacts" name="contacts" class="login-btn" value="View Contacts List">
+                <br>
+                <input type="button" id="create_res" name="create_res" class="login-btn" value="Create Reservation">
+                <br>
+                <input type="button" id="edit_res" name="edit_res" class="login-btn" value="Edit Reservation">
+                <br>
+                <input type="button" id="cancel_res" name="cancel_res" class="login-btn" value="Cancel Reservation">
+                <br>
+
+            </p>
+        </div>
+        <div class ="col-xs-12 col-md-4 container getinfo" id="hidden_div">
+            </br>
+            <p align="center">
+                Please Select a date below
+                <br>
+            <div class="row">
+                <div class="col-xs-4 col-sm-4">
+                    Date :
+                </div>
+                <div class="col-xs-8 col-sm-8">
+                    <input type="date" id="date" name="date" placeholder="date">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+            <div class="col-xs-12 col-sm-12">
+
+            <input type="button" id="view_res1" name="view_res1" class="login-btn" value="View Reservations List">
+            </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+            <input type="button" id="back" name="back" class="login-btn" value="Back to menu" onclick="resume()">
+</div>
+                    </div>
+                            </p>
+        </div>
+        <div class ="col-xs-12 col-md-4">
+
+        </div>
+    </div>
+</content>
+</body>
+</html>

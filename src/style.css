@@ -1,0 +1,345 @@
+body {
+    background-size: contain;
+    background: url('../images/back.jpg');
+    font-family:"Monotype Corsiva","Cooper Black";
+    font-size: 14px;
+    padding: 0px;
+}
+
+header {
+    height: 10%;
+    color: #eaebff;
+    background: rgba(133,73,0,0.8);
+    font-size: x-large;
+}
+
+.container{
+    height: auto;
+    padding: 10px;
+    background-color: rgba(133,73,0,0.6);
+    margin: 10px;
+    display: inline;
+    color: Gold;
+    font-size: x-large;
+}
+
+
+div #tile1 {
+    width: 70px;
+    height: 100px;
+    margin-left: 15%;
+    margin-top: 5%;
+    display: inline;
+    float: left;
+    position : relative;
+    background-image: url('../images/R2.png');
+    animation : slide-pos 4s infinite linear;
+    -webkit-animation: slide-pos 4s infinite linear;
+}
+
+@-webkit-keyframes slide-pos {
+    0% {
+        background-color: #ffb122;
+        left: 0%;
+        top: 0%;
+    }
+    50% {
+        background-color: #ffb122;
+        left: 40%;
+        top: 0%;
+    }
+    75% {
+        background-color: #fff51b;
+        transform: rotate(15deg);
+    }
+    100%{
+        background-color: #fff51b;
+        transform: rotate(15deg);
+        left: 40%;
+        top: 0%;
+    }
+}
+
+div #tile2 {
+    width: 70px;
+    height: 100px;
+    margin-left: 15%;
+    margin-top: 5%;
+    z-index: 2;
+    position : relative;
+    background-image: url('../images/R2.png');
+    animation : slide-pos2 4s infinite linear;
+    -webkit-animation: slide-pos2 4s infinite linear;
+}
+
+
+@-webkit-keyframes slide-pos2 {
+    0% {
+        background-color: #fff51b;
+        left: 60%;
+        top: 0%;
+    }
+    50% {
+        background-color: #fff51b;
+        left: 15%;
+        top: 0%;
+    }
+    75% {
+        background-color: #ffb122;
+        transform: rotate(-15deg);
+    }
+    100%{
+        background-color: #ffb122;
+        transform: rotate(-15deg);
+        left: 15%;
+        top: 0%;
+    }
+}
+
+.login-btn
+{
+    border: 2px solid gold;
+    border-radius: 5px;
+    background-color: rgba(255,180,31,0.6);
+    color : white;
+    font-size: x-large;
+    width: 90%;
+    height: 50px;
+    margin: 5px;
+}
+
+.login-btn:hover{
+    background-color: rgba(167,31,0,0.8);
+    color :  yellow;
+}
+input,select {
+    width: 90%;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+}
+.getinfo {
+    display: none;
+    z-index: 5;
+    background-color: rgba(133,73,0,0.9);
+}
+ul{
+    list-style-type: none;
+    width: 90%;
+    color: white;
+}
+ul li{
+    background-color: #F5A037;
+    margin-top: 5px;
+}
+li:hover{
+    cursor:pointer;
+}
+i{
+    float: left;
+    color: aqua;
+    margin: 2px 10px 2px 5px;
+}
+.infotab
+{
+    margin: 5px;
+    dislay:none;
+    background-color: #fff451;
+    color: black;
+}
+@media only screen and (min-width: 320px)
+{
+header
+{
+    font-size: xx-large;
+}
+}
+@media only screen and (min-width: 480px)
+{
+    @-webkit-keyframes slide-pos {
+        0% {
+            background-color: #ffb122;
+            left: 0%;
+            top: 0%;
+        }
+        50% {
+            background-color: #ffb122;
+            left: 35%;
+            top: 0%;
+        }
+        75% {
+            background-color: #fff51b;
+            transform: rotate(15deg);
+        }
+        100%{
+            background-color: #fff51b;
+            transform: rotate(15deg);
+            left: 35%;
+            top: 0%;
+        }
+    }
+    @-webkit-keyframes slide-pos2 {
+        0% {
+            background-color: #fff51b;
+            left: 60%;
+            top: 0%;
+        }
+        50% {
+            background-color: #fff51b;
+            left: 20%;
+            top: 0%;
+        }
+        75% {
+            background-color: #ffb122;
+            transform: rotate(-15deg);
+        }
+        100%{
+            background-color: #ffb122;
+            transform: rotate(-15deg);
+            left: 20%;
+            top: 0%;
+        }
+    }
+}
+@media only screen and (min-width: 768px)
+{
+    @-webkit-keyframes slide-pos {
+        0% {
+            background-color: #ffb122;
+            left: 0%;
+            top: 0%;
+        }
+        50% {
+            background-color: #ffb122;
+            left: 35%;
+            top: 0%;
+        }
+        75% {
+            background-color: #fff51b;
+            transform: rotate(15deg);
+        }
+        100%{
+            background-color: #fff51b;
+            transform: rotate(15deg);
+            left: 35%;
+            top: 0%;
+        }
+    }
+    @-webkit-keyframes slide-pos2 {
+        0% {
+            background-color: #fff51b;
+            left: 60%;
+            top: 0%;
+        }
+        50% {
+            background-color: #fff51b;
+            left: 25%;
+            top: 0%;
+        }
+        75% {
+            background-color: #ffb122;
+            transform: rotate(-15deg);
+        }
+        100%{
+            background-color: #ffb122;
+            transform: rotate(-15deg);
+            left: 25%;
+            top: 0%;
+        }
+    }
+}
+@media only screen and (min-width: 992px)
+{
+    @-webkit-keyframes slide-pos {
+        0% {
+            background-color: #ffb122;
+            left: 0%;
+            top: 0%;
+        }
+        50% {
+            background-color: #ffb122;
+            left: 40%;
+            top: 0%;
+        }
+        75% {
+            background-color: #fff51b;
+            transform: rotate(15deg);
+        }
+        100%{
+            background-color: #fff51b;
+            transform: rotate(15deg);
+            left: 40%;
+            top: 0%;
+        }
+    }
+    @-webkit-keyframes slide-pos2 {
+        0% {
+            background-color: #fff51b;
+            left: 60%;
+            top: 0%;
+        }
+        50% {
+            background-color: #fff51b;
+            left: 20%;
+            top: 0%;
+        }
+        75% {
+            background-color: #ffb122;
+            transform: rotate(-15deg);
+        }
+        100%{
+            background-color: #ffb122;
+            transform: rotate(-15deg);
+            left: 20%;
+            top: 0%;
+        }
+    }
+}
+@media only screen and (min-width: 1200px)
+{
+    @-webkit-keyframes slide-pos {
+        0% {
+            background-color: #ffb122;
+            left: 0%;
+            top: 0%;
+        }
+        50% {
+            background-color: #ffb122;
+            left: 35%;
+            top: 0%;
+        }
+        75% {
+            background-color: #fff51b;
+            transform: rotate(15deg);
+        }
+        100%{
+            background-color: #fff51b;
+            transform: rotate(15deg);
+            left: 35%;
+            top: 0%;
+        }
+    }
+    @-webkit-keyframes slide-pos2 {
+        0% {
+            background-color: #fff51b;
+            left: 60%;
+            top: 0%;
+        }
+        50% {
+            background-color: #fff51b;
+            left: 20%;
+            top: 0%;
+        }
+        75% {
+            background-color: #ffb122;
+            transform: rotate(-15deg);
+        }
+        100%{
+            background-color: #ffb122;
+            transform: rotate(-15deg);
+            left: 20%;
+            top: 0%;
+        }
+    }
+}

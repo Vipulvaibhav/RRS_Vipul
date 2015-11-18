@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Welcome to Royal Restaurant</title>
+    <link rel="stylesheet" media="all" href="style.css">
+    <script>
+        function show(x)
+        {
+            var elements = document.getElementsByClassName("infotab");
+            for (var i = 0, len = elements.length; i < len; i++) {
+                // elements[i].style ...
+                if(i==(x-1))
+                {
+                    elements[i].style.display="inline";
+                }
+                else {
+                    elements[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+<header>
+    <p align="center">The Royal Restaurant</p>
+</header>
+<content>
+    <div clas="row">
+        <div class ="col-xs-12 col-md-2">
+
+        </div>
+        <div class ="col-xs-12 col-md-8 container">
+
+            </br>
+            <p align="center">
+                List of Reservations for the selected date:
+                <br>
+                <ul>
+                <li onclick="show(1)">Confirmation #1 <i class="fa fa-plus-square" ></i>
+                </li>
+            <div class="infotab" style="display: none">
+                Confirmation # : 123-43
+                <br>
+                Status : Waitlisted
+                <br>
+                Date : 11/20/2015
+                <br>
+                Time : 9:30 P.M.
+                <br>
+                Party Size : 5 persons
+                <br>
+                Name : Mr. Robert Mathews
+                <br>
+                Email : abc@xyz.com
+                <br>
+                Contact No. : 919-456-1234
+            </div>
+            <li onclick="show(2)">Confirmation #2<i class="fa fa-plus-square" style="float: left"></i>
+            </li>
+            <div class="infotab" style="display: none">
+                Confirmation # : 123-43
+                <br>
+                Status : Confirmed
+                <br>
+                Date : 11/20/2015
+                <br>
+                Time : 9:30 P.M.
+                <br>
+                Party Size : 5 persons
+                <br>
+                Name : Mr. Robert Mathews
+                <br>
+                Email : abc@xyz.com
+                <br>
+                Contact No. : 919-456-1234
+            </div>
+            <li onclick="show(3)">Confirmation #3<i class="fa fa-plus-square" style="float: left"></i>
+            </li>
+            <div class="infotab" style="display: none">
+                Confirmation # : 123-43
+                <br>
+                Status : Waitlisted
+                <br>
+                Date : 11/20/2015
+                <br>
+                Time : 9:30 P.M.
+                <br>
+                Party Size : 5 persons
+                <br>
+                Name : Mr. Robert Mathews
+                <br>
+                Email : abc@xyz.com
+                <br>
+                Contact No. : 919-456-1234
+            </div>
+            <li onclick="show(4)">Confirmation #4<i class="fa fa-plus-square" style="float: left"></i>
+            </li>
+            <div class="infotab" style="display: none">
+                Confirmation # : 123-43
+                <br>
+                Status : Confirmed
+                <br>
+                Date : 11/20/2015
+                <br>
+                Time : 9:30 P.M.
+                <br>
+                Party Size : 5 persons
+                <br>
+                Name : Mr. Robert Mathews
+                <br>
+                Email : abc@xyz.com
+                <br>
+                Contact No. : 919-456-1234
+            </div>
+            <li onclick="show(5)">Confirmation #5<i class="fa fa-plus-square" style="float: left"></i>
+            </li>
+            <div class="infotab" style="display: none">
+                Confirmation # : 123-43
+                <br>
+                Status : Confirmed
+                <br>
+                Date : 11/20/2015
+                <br>
+                Time : 9:30 P.M.
+                <br>
+                Party Size : 5 persons
+                <br>
+                Name : Mr. Robert Mathews
+                <br>
+                Email : abc@xyz.com
+                <br>
+                Contact No. : 919-456-1234
+            </div>
+            </ul>
+            </p>
+            <br>
+            <input type="button" id="back" name="back" class="login-btn" value="Back to Menu">
+        </div>
+        <div class ="col-xs-12 col-md-2">
+
+        </div>
+    </div>
+</content>
+</body>
+</html>
